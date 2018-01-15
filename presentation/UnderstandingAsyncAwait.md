@@ -103,6 +103,14 @@ it.next();
 <!--s-->
 ## Async await uses Promises and Iterators under the hood
 
+
+<!--v-->
+## What are Promises?
+
+<!--v-->
+[https://kosamari.com/notes/the-promise-of-a-burger-party](https://kosamari.com/notes/the-promise-of-a-burger-party)
+![](https://cloud.githubusercontent.com/assets/4581495/22322821/a770251c-e36c-11e6-9361-021ee20bbb9d.png)
+
 <!--s-->
 ### Promise-Aware Generator Runner
 ```JavaScript

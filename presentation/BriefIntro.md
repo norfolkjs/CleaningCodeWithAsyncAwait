@@ -9,8 +9,6 @@ revealOptions:
 # Async/Await
 ## January 2018 @ Norfolk.js
 ## Stanley ZHeng
-<!--s-->
-#### WWWWWH
 <!-- ![](https://www.businessprocessincubator.com/wp-content/uploads/2016/02/www.imaworldwide.comhubfsimagesThe-Biggest-How-To-Post-Ever-369a5b9b18f757c0e189169b5a4b9092774637ab-1.png) -->
 <!--s-->
 ## We all like JavaScript
@@ -71,10 +69,15 @@ revealOptions:
 </section>
 <!--v-->
 
+![](https://media.giphy.com/media/qUDenOaWmXImQ/giphy.gif)
+<!--v-->
+![](https://media.giphy.com/media/vebdBlWcL2g5G/giphy.gif)
 
-Super Powers Gif
-
+<!--v-->
+![](https://media.giphy.com/media/3oKIPrCu48s5KfzV7i/giphy.gif)
 <!--s-->
+
+
 
 ## Node 8 LTS
     - Node.js API (N-API) 
@@ -95,8 +98,8 @@ Super Powers Gif
 <!--v-->
 ![mpj](images/mpj.png)
 
-`"Async/Await keywords allows us to pause the execution of functions  and this in turn writes asynchronous code that reads like synchronous code."`
- \-  MPJ
+"Async/Await keywords allows us to pause the execution of functions  and this in turn writes asynchronous code that reads like synchronous code."
+ \-  MPJ, FunFunFunction
 
 <!--v-->
 ## Example
