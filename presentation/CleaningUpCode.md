@@ -16,27 +16,6 @@ What are we trying to improve
 
 # Example 1
 
-
-
-
-<!--s-->
-Code examples
-- callback based
-    - pyramid of doom 
-        - nesting forever of doom
-        - debugging 
-- promise based 
-    Pro 
-        - readable 
-    Con
-        - create and resolve 
-        - handle each handle
-- async await using 
-    Pro
-        - wrap each well
-        - readability high 
-        - wrapping
-
 <!--s-->
 ### Common Cases 
 
@@ -279,5 +258,30 @@ const connection = async (queueName = 'msg.*') => {
 ###### [https://gist.github.com/stanzheng/788248de2e32fe50b5495999033007d7](https://gist.github.com/stanzheng/788248de2e32fe50b5495999033007d7)
 
 <!--s-->
+## Recap
+<!--s-->
+## Callback based
+- Works everywhere
+- Pyramid of doom 
+- Debugging 
+- Doesn't flow like our brain
+<!--v-->
+## promise based 
+- Chainable and easy to follow Flow
+- Better error handling with **catch**
+- Create and resolve each promise
+<!--v-->
+## async await 
+- Get back constructs we know
+    - `for loop / do while`
+    - `try catch`
+- Can make your code **slower**
+- Flows up and down (works like our brains)
+- May need to be shimmed for some environments
+
+
+<!--s-->
 ## Your Code Now is...
 ![https://i.imgur.com/XJyemeI.jpg](https://i.imgur.com/XJyemeI.jpg)
+
+
