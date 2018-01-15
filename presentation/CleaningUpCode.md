@@ -37,7 +37,58 @@ Code examples
         - readability high 
         - wrapping
 
- <!--s-->
+<!--s-->
+### Common Cases 
+
+- You're making Facebook
+- You make a query to load a user
+    - pass the userId
+    - get the users friends
+    - get all the profiles of the user's friends
+
+
+- [https://speakerdeck.com/sstur/async-and-await-bandungjs-mar-2017](https://speakerdeck.com/sstur/async-and-await-bandungjs-mar-2017)
+
+<!--v-->
+## Callbacks Based
+
+```javascript
+let friendProfiles = [];
+
+// Fetch User
+fetchJSON('user-profile', function(err, user) {
+    if (err) {return};    
+    
+    // Fetch User's friends
+    fetchJSON(`/users/${user.id}/friends`, function(err, friendIds) {
+        if (err) {return}
+
+        // Get All Friends Profiles
+        friendIDs.map((id) => {
+            fetchJSON(`/users/${id}`, (err, profile)=>{
+                if (err) {friendProfiles.push(null)};
+                friendProfiles.push(profile)
+            })
+        })
+
+        while (friendProfiles.length != friendIds.length) {};
+
+        return friendProfiles;
+    })
+})
+
+```
+
+
+<!--v-->
+## Promise Based
+![Rabbit](./images/example-2-promises.png)
+<!--v-->
+## Async Await
+![Rabbit](./images/example-2-async-await.png)
+
+
+<!--s-->
 ## Example for RabbitAMQP 
 ![Rabbit](https://neoteric.eu/wp-content/uploads/2016/06/rabbitmq_logo.png)
 
