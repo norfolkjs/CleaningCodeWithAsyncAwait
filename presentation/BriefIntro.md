@@ -127,6 +127,7 @@ function baz(str, interval) {
         console.log(await foo())
 })()
 
+
 ```
 [http://jsbin.com/nufumiz/edit?js,console](http://jsbin.com/nufumiz/edit?js,console)
 
@@ -140,6 +141,27 @@ function baz(str, interval) {
 # > "Hello World!"
 ```
 
+<!--v-->
+### Perform it in Parallel Example
+```javascript
+var process = (x) => new Promise(resolve => setTimeout(() => resolve(x), 3000));
+async function foo() {
+  var s = new Date().getTime();
+  var result1 = await process("1");
+  var result2 = await process("2");
+  console.log("foo: " + result1 + " " + result2 + ": time " + (new Date().getTime() - s));
+}
+foo();
+
+async function bar() {
+  var s = new Date().getTime();
+  var result1 = process("1");
+  var result2 = process("2");
+  console.log("bar: " + (await result1) + " " + (await result2) + ": time " + (new Date().getTime() - s));
+}
+bar();
+```
+- [@zirman](https://github.com/zirman)
 <!--s--> 
 ## notes of async await
 - you can't await a non-top level function 
