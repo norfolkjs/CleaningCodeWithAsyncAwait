@@ -1,6 +1,11 @@
 # CleaningCodeWithAsyncAwait
 
+Async await presentation given at Norfolk.js January 2018
 
+to run
+---
+`npm install`
+`reveal-md --watch slides.md  --theme solarized --css custom.css`
 
 
 Sources
